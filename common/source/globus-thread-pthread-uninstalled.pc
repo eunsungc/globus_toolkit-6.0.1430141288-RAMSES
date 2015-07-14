@@ -1,0 +1,12 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source
+dlopen=-dlopen '${abs_top_builddir}/library/libglobus_thread_pthread.la'
+
+Name: globus-thread-pthreads
+Description: Globus Toolkit - Common Library Pthreads Bindings
+Version: 15.29
+Libs.private: -lglobus_common

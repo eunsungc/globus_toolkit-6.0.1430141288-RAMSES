@@ -1,0 +1,12 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/gridftp_driver/source
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/gridftp_driver/source
+
+Name: globus-xio-gridftp-driver
+Description: Globus Toolkit - Globus XIO GridFTP Driver
+Version: 2.10
+Requires.private: globus-common >= 14, globus-xio >= 3, globus-ftp-client >= 7, globus-xio-gsi-driver >= 2
+Cflags: -I${abs_top_srcdir}

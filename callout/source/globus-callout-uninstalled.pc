@@ -1,0 +1,13 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/callout/source
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/callout/source
+
+Name: globus-callout
+Description: Globus Toolkit - Globus Callout Library
+Version: 3.13
+Requires.private: globus-common >= 15
+Libs: ${abs_top_builddir}/library/libglobus_callout.la
+Cflags: -I${abs_top_srcdir}/library

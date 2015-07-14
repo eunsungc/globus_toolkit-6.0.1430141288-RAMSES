@@ -1,0 +1,13 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gass/server_ez/source
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gass/server_ez/source
+
+Name: globus-gass-server-ez
+Description: Globus Toolkit - Globus Gass Server_ez
+Version: 5.7
+Requires.private: globus-common >= 14, globus-gass-transfer >= 7, globus-gssapi-gsi >= 10, globus-gss-assist >= 8
+Libs: ${abs_top_builddir}/libglobus_gass_server_ez.la
+Cflags: -I${abs_top_srcdir}

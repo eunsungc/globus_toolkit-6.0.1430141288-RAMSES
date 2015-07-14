@@ -1,0 +1,17 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+path=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source/scripts:/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source/programs
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source
+dlopen=-dlopen '${abs_top_builddir}/library/libglobus_thread_pthread.la' 
+thread_models= pthread
+perl5lib=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/common/source/scripts
+
+Name: globus-common
+Description: Globus Toolkit - Common Library
+Version: 15.29
+Libs:  ${abs_top_builddir}/library/libglobus_common.la
+Libs.private:  /Users/esjung/Downloads/globus_toolkit-6.0.1430141288/libltdl/libltdl.la
+Cflags:   -I/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/./libltdl -g -O2 -pthread -I${abs_top_builddir} -I${abs_top_srcdir}/library

@@ -1,0 +1,15 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gsi/cert_utils/source
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gsi/cert_utils/source
+bindir=${abs_top_builddir}/programs
+path=${bindir}
+
+Name: globus-gsi-cert-utils
+Description: Globus Toolkit - Globus GSI Cert Utils Library
+Version: 9.10
+Requires.private: globus-common >= 14, globus-openssl-module >= 3, globus-gsi-openssl-error >= 2, globus-gsi-proxy-ssl >= 4, openssl >= 0.9.8
+Libs: ${abs_top_builddir}/library/libglobus_gsi_cert_utils.la
+Cflags: -I${abs_top_srcdir}/library

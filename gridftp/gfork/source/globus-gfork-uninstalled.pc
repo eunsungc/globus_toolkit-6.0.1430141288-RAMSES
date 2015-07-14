@@ -1,0 +1,14 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/gfork/source
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/gfork/source
+
+Name: globus-gfork
+Description: Globus Toolkit - GFork
+Version: 4.7
+Requires.private: globus-common >= 14, globus-xio >= 3
+Libs: ${abs_top_builddir}/libglobus_gfork.la
+Libs.private: 
+Cflags: -I${abs_top_srcdir} 

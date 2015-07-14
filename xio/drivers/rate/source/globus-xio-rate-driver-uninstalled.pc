@@ -1,0 +1,12 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/rate/source
+dlopen=-dlopen /Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/rate/source/libglobus_xio_rate_driver.la
+
+Name: globus-xio-rate-driver
+Description: Globus Toolkit - Globus XIO Rate Limiting Driver
+Version: 1.7
+Requires.private: globus-common >= 0, globus-xio >= 0
+Cflags: -I${abs_top_srcdir}

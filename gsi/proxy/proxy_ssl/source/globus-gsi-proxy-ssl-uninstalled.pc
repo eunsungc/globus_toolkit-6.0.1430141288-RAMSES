@@ -1,0 +1,13 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gsi/proxy/proxy_ssl/source
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gsi/proxy/proxy_ssl/source
+
+Name: globus-gsi-proxy-ssl
+Description: Globus Toolkit - Globus GSI Proxy SSL Library
+Version: 5.7
+Requires.private: openssl >= 0.9.8
+Libs: ${abs_top_builddir}/library/libglobus_proxy_ssl.la
+Cflags: -I${abs_top_srcdir} -I${abs_top_srcdir}/library

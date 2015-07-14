@@ -1,0 +1,13 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/gsi
+includedir=${prefix}/include
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/gsi
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/gsi
+dlopen=-dlopen /Users/esjung/Downloads/globus_toolkit-6.0.1430141288/xio/drivers/gsi/libglobus_xio_gsi_driver.la
+
+Name: globus-xio-gsi-driver
+Description: Globus Toolkit - Globus XIO GSI Driver
+Version: 3.6
+Requires.private: globus-xio >= 3, globus-gss-assist >= 8, globus-gssapi-error >= 4, globus-gssapi-gsi >= 9, globus-common >= 14
+Cflags: -I${abs_top_srcdir}

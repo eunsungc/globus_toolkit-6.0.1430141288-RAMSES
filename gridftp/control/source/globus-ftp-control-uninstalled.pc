@@ -1,0 +1,13 @@
+prefix=/usr/local/globus-6
+exec_prefix=${prefix}
+libdir=${exec_prefix}/lib
+includedir=${prefix}/include
+abs_top_builddir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/control/source
+abs_top_srcdir=/Users/esjung/Downloads/globus_toolkit-6.0.1430141288/gridftp/control/source
+
+Name: globus-ftp-control
+Description: Globus Toolkit - GridFTP Control Library
+Version: 6.6
+Requires.private: globus-common >= 14, globus-gss-assist >= 8, globus-gssapi-gsi >= 9, globus-io >= 11, globus-xio >= 3, globus-gssapi-error >= 4
+Libs: ${abs_top_builddir}/libglobus_ftp_control.la
+Cflags: -I${abs_top_srcdir}
